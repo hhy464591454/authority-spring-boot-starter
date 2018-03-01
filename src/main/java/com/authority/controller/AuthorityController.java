@@ -80,7 +80,19 @@ public class AuthorityController {
         return responseModel;
     }
 
-
+    /**
+     *
+     * @param code
+     * @param codeName
+     * @param level
+     * @param type
+     * @param sortNum
+     * @param parentId
+     * @param remark
+     * @param id
+     * @param <T>
+     * @return
+     */
     @ApiOperation("添加资源")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "code", value = "资源编号",paramType="query",required =true,dataType = "String"),
